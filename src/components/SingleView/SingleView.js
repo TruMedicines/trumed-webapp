@@ -46,7 +46,7 @@ class SingleView extends React.Component {
                 </div>
                 <Row>
                     <Col xs={12} className="text-center">
-                        <div style={{ height: '100vh', width: '100%' }}>
+                        <div style={{ height: '80vh', width: '100%' }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "AIzaSyBBDqwdD-bi1UZI0tJag5KDQPV2Rt1I-lM" }}
                                 defaultCenter={this.props.center}
