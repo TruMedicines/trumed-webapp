@@ -55,10 +55,10 @@ const Routes = ({ location }) => {
                     <div>
                         <Suspense fallback={<PageLoader/>}>
                             <Switch location={location}>
-                                <Route path="/singleview" component={waitFor(SingleView)}/>
+                                <Route path="/map" component={waitFor(SingleView)}/>
                                 <Route path="/submenu" component={waitFor(SubMenu)}/>
 
-                                <Redirect to="/singleview"/>
+                                <Redirect to="/map"/>
                             </Switch>
                         </Suspense>
                     </div>

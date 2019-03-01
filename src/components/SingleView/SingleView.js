@@ -16,7 +16,7 @@ class SingleView extends React.Component {
     };
 
     state = {
-      dropdownOpen: false
+      pills: []
     }
 
     componentWillMount()
@@ -46,7 +46,6 @@ class SingleView extends React.Component {
                 </div>
                 <Row>
                     <Col xs={12} className="text-center">
-                        <h2 className="text-thin">Single view content</h2>
                         <div style={{ height: '100vh', width: '100%' }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "AIzaSyBBDqwdD-bi1UZI0tJag5KDQPV2Rt1I-lM" }}
@@ -57,7 +56,7 @@ class SingleView extends React.Component {
                                     this.state.pills.map((pill) => {
                                         return <img
                                             src={"img/pill.png"}
-                                            style={{"width": "32px", "height": "32px"}}
+                                            style={{"width": "32px", "height": "32px", "margin-left": "-16px", "margin-top": "-16px"}}
                                             lat={pill.lat}
                                             lng={pill.lng}
                                         />
